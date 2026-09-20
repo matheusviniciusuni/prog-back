@@ -1,13 +1,13 @@
-package com.pratica.api.financeiro;
+package com.pratica.financeiro_api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class FinanceiroApplication {
+public class FinanceiroApiApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(FinanceiroApplication.class, args);
+		SpringApplication.run(FinanceiroApiApplication.class, args);
 	}
 
 }

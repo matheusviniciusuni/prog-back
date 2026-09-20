@@ -1,10 +1,10 @@
-package com.pratica.api.financeiro;
+package com.pratica.financeiro_api;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class FinanceiroApplicationTests {
+class FinanceiroApiApplicationTests {
 
 	@Test
 	void contextLoads() {

@@ -8,10 +8,10 @@
 		<version>4.1.1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.pratica.api</groupId>
-	<artifactId>financeiro</artifactId>
+	<groupId>com.pratica</groupId>
+	<artifactId>financeiro-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>financeiro</name>
+	<name>financeiro-api</name>
 	<description/>
 	<url/>
 	<licenses>
