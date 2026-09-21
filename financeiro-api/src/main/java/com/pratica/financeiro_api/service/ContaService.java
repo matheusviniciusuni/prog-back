@@ -3,6 +3,7 @@ package com.pratica.financeiro_api.service;
 import java.math.BigDecimal;
 import java.util.List;
 
+import com.pratica.financeiro_api.exception.RecursoNaoEncontradoException;
 import com.pratica.financeiro_api.model.Conta;
 import com.pratica.financeiro_api.repository.ContaRepository;
 import org.springframework.stereotype.Service;
@@ -21,10 +22,12 @@ public class ContaService {
         this.contaRepository = contaRepository;
     }
 
-    public Conta buscarContaPorId(Long id) {
-        return contas.stream()
-                .filter(conta -> conta.getId().equals(id))
-                .findFirst()
-                .orElse(null);
+    public Conta buscarContaPorId(Long id) throws RecursoNaoEncontradoException {
+        return contaRepository.findById(id).orElseThrow(() 
+            -> new RecursoNaoEncontradoException("Conta não encontrada"));
     }
+
+    /* public List<Conta> listarContas() {
+        return contas;
+    } */
 }
